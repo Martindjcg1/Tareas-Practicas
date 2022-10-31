@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Krub';
+}
+
+
+body {
+    background: purple;
+    background-size: 100vw 100vh;
+}
+
+
+
+body, .modal-iniciar-sesion{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal-iniciar-sesion{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-modal:checked ~ .modal-iniciar-sesion{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor{
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+    transition: all 500ms ease;
+    position: relative;
+    transform: translateY(-30%);
+
+}
+#btn-modal:checked ~ .modal-iniciar-sesion .contenedor{
+   transform: translateY(0%);
+}
+
+.contenedor header{
+    padding: 10px;
+    background: #830180;
+    color: #fff;
+
+}
+
+.contenedor label{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+#btn-modal{
+    display: none;
+}
+.lbl-modal{
+    background: #fff;
+    padding: 10px 15px; 
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.CuentaNueva{
+    color: red;
+    text-decoration: none;
+}
+.Contraseña{
+position: absolute;
+width: 574px;
+height: 62px;
+left: 846px;
+top: 393px;
+}
+.Remember{
+    position: relative;
+    right: -50px;
+    color: #474b4e;
+    cursor: pointer;
+    top: -130px;
+}
+
+.Me{
+    position: relative;
+    right: -30px;
+    top: -22px;
+}
+
+
+.NoCuenta{
+    position: relative;
+    top: -118px;
+    right: -70px;
+    color: #474b4e;
+    text-decoration:solid;
+}
+
+.form{
+    width: 500px;
+    height: 400px;
+   
+   
+    
+     background: white;
+     padding: 20px 0 20px 0;
+     margin: 40px 0px 0px;
+     text-align: center; 
+     text-decoration: none;
+}
+
+form input{
+    position: relative;
+    width: 400px;
+    height: 52px;
+    
+    background: white;
+    padding: 14px 16px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: none;
+    border: 1px solid  #e4e3e3;
+
+    top: -50px;
+}
+
+.Logo-login{
+    position: relative;
+    top: -60px;
+}
+
+.entrar{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    top: -135px;
+    left: 50px;
+    background: #830180;
+    color: white;
+    padding: 14px 16px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    
+
+}
+
